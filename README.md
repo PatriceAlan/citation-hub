@@ -45,9 +45,12 @@ Puis ouvrez votre navigateur à l’adresse http://localhost:4200/
 L’application se rechargera automatiquement à chaque modification des fichiers sources.
 
 ## Construction du projet
-Pour compiler le projet :
-ng build
 
+Pour compiler le projet :
+
+```bash
+ng build
+```
 
 Les artefacts compilés seront placés dans le dossier dist/.
 La version de production optimise l’application pour la performance et la rapidité.
