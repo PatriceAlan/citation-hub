@@ -44,6 +44,8 @@ export class Authors implements OnInit {
   selectAuthor(author: Author): void {
     this.selectedAuthor = author;
     this.loadAuthorQuotes(author.slug);
+
+    this.filteredAuthors = [author];
   }
 
   loadAuthorQuotes(authorSlug: string): void {
@@ -58,6 +60,8 @@ export class Authors implements OnInit {
   clearSelection(): void {
     this.selectedAuthor = null;
     this.authorQuotes = [];
+
+    this.filteredAuthors = this.authors;
   }
 
   getInitials(name: string): string {

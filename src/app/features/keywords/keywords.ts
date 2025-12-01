@@ -47,6 +47,8 @@ export class Keywords implements OnInit {
     this.selectedKeyword = keyword;
     this.currentIndex = 0;
     this.loadKeywordQuotes();
+
+    this.filteredKeywords = [keyword];
   }
 
 
@@ -72,6 +74,8 @@ export class Keywords implements OnInit {
     this.selectedKeyword = null;
     this.keywordQuotes = [];
     this.currentIndex = 0;
+
+    this.filteredKeywords = this.keywords;
   }
 
   shareQuote(quote: Quote): void {
