@@ -1,0 +1,87 @@
+<!-- src/app/features/authors/authors.component.html -->
+<div class="min-h-screen bg-gray-50 pb-24">
+  <div class="bg-slate-900 text-white p-4">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+      </svg>
+      <h1 class="text-xl font-bold">citationHub</h1>
+    </div>
+  </div>
+
+  <div class="p-6 max-w-2xl mx-auto">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Parcourir par auteur</h2>
+    
+    <div class="mb-6">
+      <div class="relative">
+        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.3-4.3"/>
+        </svg>
+        <input 
+          type="text" 
+          [(ngModel)]="searchTerm"
+          (input)="filterAuthors()"
+          placeholder="Rechercher un auteur..." 
+          class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+    </div>
+    
+    <div class="space-y-3">
+      @for (author of filteredAuthors; track author.slug) {
+        <button 
+          (click)="selectAuthor(author)"
+          class="w-full bg-white hover:bg-gray-50 border border-gray-200 rounded-xl p-4 flex items-center justify-between transition-colors">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-linear-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+              {{ getInitials(author.name) }}
+            </div>
+            <span class="text-lg font-medium text-gray-800">{{ author.name }}</span>
+          </div>
+          <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </button>
+      }
+    </div>
+
+    @if (selectedAuthor && authorQuotes.length > 0) {
+      <div class="mt-8">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl font-bold text-gray-800">Citations de {{ selectedAuthor.name }}</h3>
+          <button (click)="clearSelection()" class="text-blue-600 hover:underline text-sm">
+            Fermer
+          </button>
+        </div>
+        
+        @if (loadingQuotes) {
+          <div class="flex justify-center p-8">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+          </div>
+        } @else {
+          <div class="space-y-4">
+            @for (quote of authorQuotes; track quote.id) {
+              <div class="bg-white border border-gray-200 rounded-xl p-6">
+                <p class="text-gray-800 mb-3">"{{ quote.content }}"</p>
+                <div class="flex justify-between items-center">
+                  <p class="text-sm text-gray-500">— {{ quote.author }}</p>
+                  <button 
+                    (click)="toggleFavorite(quote)"
+                    [class.text-red-500]="isFavorite(quote.id)"
+                    class="text-gray-400 hover:text-red-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" [attr.fill]="isFavorite(quote.id) ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            }
+          </div>
+        }
+      </div>
+    }
+  </div>
+
+  <app-bottom-nav></app-bottom-nav>
+</div>

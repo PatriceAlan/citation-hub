@@ -1,0 +1,40 @@
+<!-- src/app/features/daily-quote/daily-quote.component.html -->
+<div class="min-h-screen bg-gray-50 pb-24">
+  <div class="bg-slate-900 text-white p-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+      </svg>
+      <h1 class="text-xl font-bold">citationHub</h1>
+    </div>
+  </div>
+
+  <div class="p-6 max-w-2xl mx-auto">
+    <div class="bg-linear-to-br from-amber-400 to-orange-500 rounded-2xl p-6 mb-6">
+      <div class="flex items-center gap-3 text-white mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/>
+          <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>
+        </svg>
+        <h2 class="text-2xl font-bold">Citation du jour</h2>
+      </div>
+      <p class="text-white/80 text-sm">{{ currentDate }}</p>
+    </div>
+
+    @if (loading) {
+      <div class="flex justify-center items-center h-64">
+        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-amber-500"></div>
+      </div>
+    } @else if (dailyQuote) {
+      <app-quote-card
+        [quote]="dailyQuote"
+        [isFavorite]="isFavorite(dailyQuote.id)"
+        (refresh)="loadDailyQuote()"
+        (share)="shareQuote($event)"
+        (toggleFavorite)="toggleFavorite($event)">
+      </app-quote-card>
+    }
+  </div>
+
+  <app-bottom-nav></app-bottom-nav>
+</div>

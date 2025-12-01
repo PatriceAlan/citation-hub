@@ -1,0 +1,77 @@
+<!-- src/app/features/keywords/keywords.component.html -->
+<div class="min-h-screen bg-gray-50 pb-24">
+  <div class="bg-slate-900 text-white p-4">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+      </svg>
+      <h1 class="text-xl font-bold">citationHub</h1>
+    </div>
+  </div>
+
+  <div class="p-6 max-w-2xl mx-auto">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Parcourir par mot-clé</h2>
+    
+    <div class="mb-6">
+      <div class="relative">
+        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.3-4.3"/>
+        </svg>
+        <input 
+          type="text" 
+          [(ngModel)]="searchTerm"
+          (input)="filterKeywords()"
+          placeholder="Rechercher un mot-clé..." 
+          class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-2 gap-3">
+      @for (keyword of filteredKeywords; track keyword) {
+        <button 
+          (click)="selectKeyword(keyword)"
+          class="bg-linear-to-br from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-xl p-6 text-center transition-all transform hover:scale-105">
+          <svg class="w-6 h-6 mx-auto mb-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19"/>
+            <path d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z"/>
+            <circle cx="6.5" cy="9.5" r=".5" fill="currentColor"/>
+          </svg>
+          <span class="text-lg font-medium capitalize">{{ keyword }}</span>
+        </button>
+      }
+    </div>
+
+    @if (selectedKeyword && keywordQuotes.length > 0) {
+      <div class="mt-8">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xl font-bold text-gray-800">Citations : {{ selectedKeyword }}</h3>
+          <button (click)="clearSelection()" class="text-blue-600 hover:underline text-sm">
+            Fermer
+          </button>
+        </div>
+        
+        @if (loadingQuotes) {
+          <div class="flex justify-center p-8">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+          </div>
+        } @else {
+          <app-quote-card
+            [quote]="keywordQuotes[currentIndex]"
+            [isFavorite]="isFavorite(keywordQuotes[currentIndex].id)"
+            (refresh)="showNextQuote()"
+            (share)="shareQuote($event)"
+            (toggleFavorite)="toggleFavorite($event)">
+          </app-quote-card>
+          
+          <div class="text-center mt-4 text-sm text-gray-600">
+            Citation {{ currentIndex + 1 }} sur {{ keywordQuotes.length }}
+          </div>
+        }
+      </div>
+    }
+  </div>
+
+  <app-bottom-nav></app-bottom-nav>
+</div>

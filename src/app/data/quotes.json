@@ -1,0 +1,352 @@
+[
+  {
+    "id": "1",
+    "content": "La simplicité est la sophistication ultime.",
+    "author": "Leonardo da Vinci",
+    "authorSlug": "leonardo-da-vinci"
+    
+  },
+  {
+    "id": "2",
+    "content": "Le succès est la somme de petits efforts répétés.",
+    "author": "Robert Collier",
+    "authorSlug": "robert-collier"
+    
+  },
+  {
+    "id": "3",
+    "content": "Votre temps est limité, ne le gâchez pas.",
+    "author": "Steve Jobs",
+    "authorSlug": "steve-jobs"
+    
+  },
+  {
+    "id": "4",
+    "content": "Le savoir est le pouvoir.",
+    "author": "Francis Bacon",
+    "authorSlug": "francis-bacon"
+    
+  },
+  {
+    "id": "5",
+    "content": "La connaissance parle, mais la sagesse écoute.",
+    "author": "Jimi Hendrix",
+    "authorSlug": "jimi-hendrix"
+    
+  },
+  {
+    "id": "6",
+    "content": "La vie est un mystère qu’il faut vivre, et non un problème à résoudre.",
+    "author": "Gandhi",
+    "authorSlug": "gandhi"
+    
+  },
+  {
+    "id": "7",
+    "content": "Le bonheur n’est pas une destination, mais une façon de voyager.",
+    "author": "Margaret Lee Runbeck",
+    "authorSlug": "margaret-lee-runbeck"
+    
+  },
+  {
+    "id": "8",
+    "content": "L’imagination est plus importante que le savoir.",
+    "author": "Albert Einstein",
+    "authorSlug": "albert-einstein"
+    
+  },
+  {
+    "id": "9",
+    "content": "La liberté commence où l’ignorance finit.",
+    "author": "Victor Hugo",
+    "authorSlug": "victor-hugo"
+    
+  },
+  {
+    "id": "10",
+    "content": "Agis comme s’il était impossible d’échouer.",
+    "author": "Winston Churchill",
+    "authorSlug": "winston-churchill"
+    
+  },
+  {
+    "id": "11",
+    "content": "La créativité, c’est l’intelligence qui s’amuse.",
+    "author": "Albert Einstein",
+    "authorSlug": "albert-einstein"
+    
+  },
+  {
+    "id": "12",
+    "content": "Le courage n’est pas l’absence de peur, mais la capacité de la vaincre.",
+    "author": "Nelson Mandela",
+    "authorSlug": "nelson-mandela"
+    
+  },
+  {
+    "id": "13",
+    "content": "La patience est amère, mais son fruit est doux.",
+    "author": "Aristote",
+    "authorSlug": "aristote"
+    
+  },
+  {
+    "id": "14",
+    "content": "Il n’y a pas de vent favorable pour celui qui ne sait pas où il va.",
+    "author": "Sénèque",
+    "authorSlug": "seneque"
+    
+  },
+  {
+    "id": "15",
+    "content": "La vraie générosité envers l’avenir consiste à tout donner au présent.",
+    "author": "Albert Camus",
+    "authorSlug": "albert-camus"
+    
+  },
+  {
+    "id": "16",
+    "content": "Le futur appartient à ceux qui croient à la beauté de leurs rêves.",
+    "author": "Eleanor Roosevelt",
+    "authorSlug": "eleanor-roosevelt"
+    
+  },
+  {
+    "id": "17",
+    "content": "La vie est faite de choix.",
+    "author": "Jean-Paul Sartre",
+    "authorSlug": "jean-paul-sartre"
+    
+  },
+  {
+    "id": "18",
+    "content": "Le travail éloigne de nous trois grands maux : l’ennui, le vice et le besoin.",
+    "author": "Voltaire",
+    "authorSlug": "voltaire"
+    
+  },
+  {
+    "id": "19",
+    "content": "La seule façon de faire du bon travail est d’aimer ce que vous faites.",
+    "author": "Steve Jobs",
+    "authorSlug": "steve-jobs"
+    
+  },
+  {
+    "id": "20",
+    "content": "Un voyage de mille lieues commence toujours par un premier pas.",
+    "author": "Lao Tseu",
+    "authorSlug": "lao-tseu"
+    
+  },
+  {
+    "id": "21",
+    "content": "La réussite appartient à tout le monde. C’est au travail d’équipe qu’en revient le mérite.",
+    "author": "Frank Piccard",
+    "authorSlug": "frank-piccard"
+    
+  },
+  {
+    "id": "22",
+    "content": "La vie est un défi à relever, un bonheur à mériter, une aventure à tenter.",
+    "author": "Mère Teresa",
+    "authorSlug": "mere-teresa"
+    
+  },
+  {
+    "id": "23",
+    "content": "La plus grande gloire n’est pas de ne jamais tomber, mais de se relever à chaque chute.",
+    "author": "Confucius",
+    "authorSlug": "confucius"
+    
+  },
+  {
+    "id": "24",
+    "content": "Le pessimiste voit la difficulté dans chaque opportunité, l’optimiste voit l’opportunité dans chaque difficulté.",
+    "author": "Winston Churchill",
+    "authorSlug": "winston-churchill"
+    
+  },
+  {
+    "id": "25",
+    "content": "La vie est courte, mais elle est large.",
+    "author": "Jim Harrison",
+    "authorSlug": "jim-harrison"
+    
+  },
+  {
+    "id": "26",
+    "content": "La gratitude transforme ce que nous avons en suffisance.",
+    "author": "Aesop",
+    "authorSlug": "aesop"
+    
+  },
+  {
+    "id": "27",
+    "content": "La connaissance de soi est le début de toute sagesse.",
+    "author": "Aristote",
+    "authorSlug": "aristote"
+    
+  },
+  {
+    "id": "28",
+    "content": "La vie est un miroir et vous y voyez ce que vous y projetez.",
+    "author": "William Shakespeare",
+    "authorSlug": "wiillam-shakespeare"
+    
+  },
+  {
+    "id": "29",
+    "content": "Le plus grand risque est de ne pas en prendre.",
+    "author": "Mark Zuckerberg",
+    "authorSlug": "mark-zukerberg"
+    
+  },
+  {
+    "id": "30",
+    "content": "La réussite n’est pas la clé du bonheur. Le bonheur est la clé de la réussite.",
+    "author": "Albert Schweitzer",
+    "authorSlug": "alber-schweitzer"
+    
+  },
+  {
+    "id": "31",
+    "content": "La vie est un mystère qu’il faut accepter.",
+    "author": "Paulo Coelho",
+    "authorSlug": "paulo-coelho"
+    
+  },
+  {
+    "id": "32",
+    "content": "Le savoir s’acquiert par l’expérience, tout le reste n’est que de l’information.",
+    "author": "Albert Einstein",
+    "authorSlug": "albert-einstein"
+    
+  },
+  {
+    "id": "33",
+    "content": "La vie est faite de petits bonheurs.",
+    "author": "André Gide",
+    "authorSlug": "andre-gide"
+    
+  },
+  {
+    "id": "34",
+    "content": "La confiance en soi est le premier secret du succès.",
+    "author": "Ralph Waldo Emerson",
+    "authorSlug": "ralph-waldo-emerson"
+    
+  },
+  {
+    "id": "35",
+    "content": "La vie est un défi, relève-le.",
+    "author": "Mère Teresa",
+    "authorSlug": "mere-teresa"
+    
+  },
+  {
+    "id": "36",
+    "content": "La sagesse commence dans l’émerveillement.",
+    "author": "Socrate",
+    "authorSlug": "socrate"
+    
+  },
+  {
+    "id": "37",
+    "content": "La vie est un art, il faut savoir la peindre.",
+    "author": "Henri Matisse",
+    "authorSlug": "henri-matisse"
+    
+  },
+  {
+    "id": "38",
+    "content": "Le succès n’est pas final, l’échec n’est pas fatal : c’est le courage de continuer qui compte.",
+    "author": "Winston Churchill",
+    "authorSlug": "winston-churchill"
+    
+  },
+  {
+    "id": "39",
+    "content": "La vie est un rêve, fais-en une réalité.",
+    "author": "Saint-Exupéry",
+    "authorSlug": "saint-exupery"
+    
+  },
+  {
+    "id": "40",
+    "content": "La persévérance est souvent la clé du succès.",
+    "author": "Charlie Chaplin",
+    "authorSlug": "charlie-chaplin"
+    
+  },
+  {
+    "id": "41",
+    "content": "La vie est un livre, et ceux qui ne voyagent pas n’en lisent qu’une page.",
+    "author": "Saint Augustin",
+    "authorSlug": "saint-augustin"
+    
+  },
+  {
+    "id": "42",
+    "content": "La vie est courte, l’art est long.",
+    "author": "Hippocrate",
+    "authorSlug": "hippocrate"
+    
+  },
+  {
+    "id": "43",
+    "content": "Le bonheur est réel seulement quand il est partagé.",
+    "author": "Christopher McCandless",
+    "authorSlug": "christopher-mccandless"
+    
+  },
+  {
+    "id": "44",
+    "content": "La vie est un défi, pas une compétition.",
+    "author": "Dalai Lama",
+    "authorSlug": "dalai-lama"
+    
+  },
+  {
+    "id": "45",
+    "content": "La vie est un mystère à vivre, pas un problème à résoudre.",
+    "author": "Osho",
+    "authorSlug": "osho"
+    
+  },
+  {
+    "id": "46",
+    "content": "Le succès est d’aller d’échec en échec sans perdre son enthousiasme.",
+    "author": "Winston Churchill",
+    "authorSlug": "winston-churchill"
+    
+  },
+  {
+    "id": "47",
+    "content": "La vie est un cadeau, appréciez chaque instant.",
+    "author": "Oprah Winfrey",
+    "authorSlug": "oprah-winfrey"
+    
+  },
+  {
+    "id": "48",
+    "content": "La vie est un défi, une aventure, une opportunité.",
+    "author": "Richard Branson",
+    "authorSlug": "richard-branson"
+    
+  },
+  {
+    "id": "49",
+    "content": "La vie est un mystère, et chaque jour une découverte.",
+    "author": "Carl Sagan",
+    "authorSlug": "carl-sagan"
+    
+  },
+  {
+    "id": "50",
+    "content": "La vie est belle pour ceux qui savent la voir.",
+    "author": "Federico Fellini",
+    "authorSlug": "federico-fellini"
+    
+  }
+]
