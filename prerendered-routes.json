@@ -1,9 +1,0 @@
-{
-  "routes": {
-    "/citation-hub": {},
-    "/citation-hub/authors": {},
-    "/citation-hub/daily": {},
-    "/citation-hub/favorites": {},
-    "/citation-hub/keywords": {}
-  }
-}
