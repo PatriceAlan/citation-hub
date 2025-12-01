@@ -1,6 +1,4 @@
-<!-- src/app/features/home/home.component.html -->
 <div class="min-h-screen bg-gray-50 pb-24">
-  <!-- Header -->
   <div class="bg-slate-900 text-white p-4 flex justify-between items-center">
     <div class="flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -9,13 +7,13 @@
       <h1 class="text-xl font-bold">citationHub</h1>
     </div>
     <div class="flex gap-4">
-      <button class="hover:text-blue-400 transition-colors">
+      <button class="hover:text-blue-400 transition-colors cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/>
           <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>
         </svg>
       </button>
-      <button (click)="navigateToFavorites()" class="hover:text-blue-400 transition-colors relative">
+      <button (click)="navigateToFavorites()" class="hover:text-blue-400 transition-colors relative cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
         </svg>
@@ -46,7 +44,7 @@
         <p class="text-gray-600">Aucune citation disponible</p>
         <button 
           (click)="loadQuotesBatch()"
-          class="mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+          class="mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 cursor-pointer">
           Charger des citations
         </button>
       </div>

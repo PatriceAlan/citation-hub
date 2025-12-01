@@ -49,16 +49,12 @@ export class Keywords implements OnInit {
     this.loadKeywordQuotes();
   }
 
-  /** 
-   * Version locale : aucune API → aucune requête → 100% synchronisé 
-   */
+
   loadKeywordQuotes(): void {
     this.loadingQuotes = true;
 
-    // Récupérer les citations locales contenant le mot clé
     const results = this.quoteService.search(this.selectedKeyword ?? '');
 
-    // Limiter à 10 résultats (comme avant)
     this.keywordQuotes = results.slice(0, 10);
 
     this.loadingQuotes = false;
