@@ -3,7 +3,7 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>CitationHub</title>
-  <base href="https://patricealan.github.io/citation-hub/">
+  <base href="/citation-hub/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles-KNB2I5K3.css"></head>

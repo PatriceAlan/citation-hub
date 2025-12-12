@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://patricealan.github.io/citation-hub',
+  basePath: '/citation-hub',
   supportedLocales: {
   "en-US": ""
 },
